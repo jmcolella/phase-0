@@ -19,3 +19,21 @@ Website: a static page that is translated from an html file
 World wide web: an application that "sits on top of" the internet; it uses the internet connections to share information that allows a user to read and interact with webpages on a web browser
 
 ## Other questions
+
+What 2 new things did you learn about the web?
+
+Believe it or not, I actually learned that there is a difference between the internet and the world wide web. I really did theink they were the same thing, but it's more that they are just very closely related. I see it as the internet is like the physical railroads connecting different destinations (servers, computers) and the world wide web is a train, which just uses the interent to transport specific information (web pages) between these destinations.
+
+I also learned about the DNS and how it stores IP addresses and domain names. It's pretty incredible that when I use a browser to request access to a website, my computer communicates with numerous different servers to find exactly where that IP address was stored according to the DNS.
+
+How did you feel when you saw your web page live?
+
+I felt pretty accomplished. Typing up the blog wasn't too special, but being able to track the changes and use git to push the changes up to Github, that was pretty cool. It's been awesome to use the command line.
+
+Did you have an "aha" moments or were any concepts solidified?
+
+Doing this bonus challenge is helping to solidfy my version control and Github procedures. I'm getting the hang of editing a file, then checking it's status, then adding/commiting, then pushing that up to Github and then pulling to sync the local/origin master. I'm also getting in the habit of creating a new branch for each change I make.
+
+Did you find any resources on your own that helped you better understand a topic?
+
+I have not yet found anything as of yet that has helped me understand any topics more. The only thing I guess I could say is that I've looked up a few things on Wikipedia to a get a more straightforward and detailed definition of things, like shell and bash.
