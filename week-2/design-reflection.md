@@ -1,3 +1,7 @@
+## Site Map Image
+
+![Site Map](/week-2/imgs/site-map-week-2.png)
+
 ## What are the 6 Phases of Web Design?
 
 The 6 phases of web design are: 1) gather information, 2) plan, 3) design, 4) develop, 5) test and delivery and 6) maintanence. The first two phases involve answering major questions about the purpose of the website and determining how the layout (using a site map) will help achieve that purpose when a user visits the website. Design and Develop are led by the developer making the website, but still involve a lot of input from the website owner. Here, the actually website itself takes shape with the HTML/CSS being written out and portions of the website are either available to be viewed or tested by the owner. The fifth phase comes towards the end, when the website is basically ready to be made public. Here, the developer/owner of the site fine tune the details of the website and iron out any issues they may encounter. The last phase involves regular updating and general caretaking of the website once it has gone live. This can be done by a highered developer, or using previously agreed upon tools by the owner
@@ -28,6 +32,3 @@ I kind of found making the site map to be a bit tedious. I guess I just wasn't h
 
 I also had a hard time with using the markdown language to get my site map image inline on my reflection text. All the resources I searched about using markdown to display an image use a webpage address for the image file. Well, I thought we were supposed to save the image as a file on our local computer? How does the markdown language work then? I'll try to dig deeper on this subject, I'm just not understanding it right now.
 
-## Site Mape image
-
-![alt text](/Programs/phase-0/week-2/imgs/site-map-week-2.png)
