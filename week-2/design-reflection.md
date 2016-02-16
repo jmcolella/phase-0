@@ -27,3 +27,7 @@ User experience design  uses knowledge about how a user feels when navigating a 
 I kind of found making the site map to be a bit tedious. I guess I just wasn't happy with the method I chose (Slickplan). Maybe if I just draw it out, I might enjoy the process better.
 
 I also had a hard time with using the markdown language to get my site map image inline on my reflection text. All the resources I searched about using markdown to display an image use a webpage address for the image file. Well, I thought we were supposed to save the image as a file on our local computer? How does the markdown language work then? I'll try to dig deeper on this subject, I'm just not understanding it right now.
+
+## Site Mape image
+
+![alt text](/Programs/phase-0/week-2/imgs/site-map-week-2.png)
