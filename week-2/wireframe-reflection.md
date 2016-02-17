@@ -1,10 +1,10 @@
 ## Index Wireframe
 
-![wire index](/phase-0/week-2/imgs/wireframe-index.png)
+![alt text](/phase-0/week-2/imgs/wireframe-index.png)
 
 ## Blog Wireframe
 
-![wire blog](/phase-0/week-2/imgs/wireframe-blog-index.png)
+![alt text](/phase-0/week-2/imgs/wireframe-blog-index.png)
 
 ## What is a wireframe?
 
