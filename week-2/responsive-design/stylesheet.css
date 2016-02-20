@@ -23,6 +23,12 @@ a {
   color: white;
 }
 
+@media (max-width: 400px) {
+  #side-a {
+    float: none;
+  }
+}
+
 #side-a {
   float: left;
   width: 150px;
