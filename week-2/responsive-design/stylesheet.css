@@ -23,9 +23,9 @@ a {
   color: white;
 }
 
-@media screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
   #side-a {
-    float: top;
+    float: none;
   }
 }
 
