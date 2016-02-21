@@ -30,7 +30,7 @@ a {
 }
 
 @media (max-width: 400px) {
-  #side-a li {
+  #side-a ul li {
     display: inline;
   }
 }
