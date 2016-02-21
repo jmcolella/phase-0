@@ -29,8 +29,8 @@ a {
   }
 }
 
-@media (max-width: 400px) {
-  #side-a ul li {
+@media and (max-width: 400px) {
+  ul li {
     display: inline;
   }
 }
