@@ -30,7 +30,7 @@ a {
 }
 
 @media (max-width: 400px) {
-  #side-a ul {
+  #side-a li {
     display: table-row;
   }
 }
