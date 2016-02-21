@@ -42,6 +42,7 @@ a {
 
 #side-a li{
   padding-top: 20px;
+  display: inline;
 }
 
 #side-b {
