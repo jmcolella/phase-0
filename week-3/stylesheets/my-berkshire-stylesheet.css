@@ -77,9 +77,40 @@ li {
 /*
 
 What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  It's important to know exactly where that external file is. The link path needs to be incredibly precise,
+  or else the link will not work. In addition, I learned the hard way that the rel is not "stylesheets" but
+  just "stylesheet", singular. That, I think, has given me a lot of headache, and now I can properly link
+  CSS to HTML.
+  
 What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  We used classes to help us position similar pieces of text with just one piece of code. For example, we noticed
+  that the header and the Geico image portion were both centered, so we applied the same class to them, making
+  our code a bit more efficient. Also, since our HTML had the links set up in a list, we decided to split the
+  list into 2 divs, and then floated them to the left and right and made sure they each occupied about 50%
+  of the width of the page. We then cleared the next section, so that it wouldn't wrap around the floated lists.
+  It was certainly tricky to get the elements to behave the way we wanted to, but using classes really helped in
+  shaping the site.
+  
 What CSS did you use to modify the element style (like size, color, etc.)
-Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+  We messed around a bit with font-size to make the different text elements appear as close to the actual page
+  as possible. We also decided to use em for all font-sizes so that the text size would be a bit more fluid 
+  when displayed on different monitors. We kept the color pretty straightforward and accurate to the site, 
+  maintaining the blue and white color scheme.
+  
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, 
+how would you know which one to add to your HTML?
+  Oh yeah, we modified the HTML quite a bit with classes and a handful of ids. We found classes to be incredibly useful
+  because there were a lot of elements that seemed to have the same basic style, such as centered text. Another example
+  was creating the different borders to denote the sections. We created a class called "horizontal-line" and gave it a
+  top border of 1px solid black, and then applied that class to each section that had a line "above" it, therefore creating
+  the necessary lines on the page. That was a very interesting technique that my pair, Robin, came up with and made me truly
+  understand the power of classes.
+  
 When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  I liked our HTML more to be honest. We noticed right away that the actual code used a ton of <p> tags and used a table to create
+  the link section. Most of all, the actual code rarely used any semantic HTML. Now, maybe this site was written before HTML5, but
+  I liked that our HTML included header, section and footer elements, and that we used a list for the links rather than a table. Sure,
+  using a float to get the list to behave the way we needed to was a bit weird, but the HTML is much easier to look at and issues could
+  be found better.
 
 */
