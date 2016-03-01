@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+  background-color: red;
+  font-family: sans-serif;
+}
+
+.column-1 {
+  float: left;
+  width: 49%;
+  background-color: blue;
+}
+
+.column-2 {
+  float: right;
+  width: 49%;
+  background-color: yellow;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding-top: 2em;
+  font-family: sans-serif;
+  background-color: green;
+}
