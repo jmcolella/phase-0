@@ -19,3 +19,35 @@ When dividing with an integer or a float, the resulting answer is always display
 
 `irb(main):002:0> 60*24*365*10
 => 5256000`
+
+Link to 4.2.1: ![4.2.1 Var](https://github.com/jmcolella/phase-0/blob/master/week-4/defining-variables.rb)
+
+Link to 4.2.2: ![4.2.2 string](https://github.com/jmcolella/phase-0/blob/master/week-4/simple-string.rb)
+
+Link to 4.2.3: ![4.2.3 basic_math](https://github.com/jmcolella/phase-0/blob/master/week-4/basic-math.rb)
+
+## Reflection
+
+#### How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+I'm a bit confused by this question, but I suppose it handles all four of these operations between like objects. What I mean by this is that Ruby can only add/subtract/multiply/divide integers with integers and floats with floats. You could not, for example, add an integer to a string, or multiple a number by a string. Also, Ruby will execute expressions within parantheses before anything else.
+
+#### What is the difference between integers and floats?
+
+Please see above.
+
+#### What is the difference between integer and float division?
+
+Please see above.
+
+#### What are strings? Why and when would you use them?
+
+Strings are a collection of characters written with quotations. We would use strings if we are writing a program that will return text rather than just strictly numbers (which would be integers or floats). Strings can contain numbers, but they are treated differently than integers in Ruby. This seems to be due to simply how they are classified, which then affects the ways in which you can use them within a program.
+
+#### What are local variables? Why and when would you use them?
+
+
+
+#### How was this challenge? Did you get a good review of some of the basics?
+
+This challenge was pretty easy overall, but it was nice to actually use rspec and see what's it like when you do get an error in the code. I'm still not 100% sure of everything rspec spits back when there is an issue, but it did help me fix the quotient aspect of the basic math challenge, since rspec was saying it was looking for a float when I initially had the program outputting an integer. So, I added the .to_f method to each of my num variables and got the program to pass the rspec test.
