@@ -20,11 +20,11 @@ When dividing with an integer or a float, the resulting answer is always display
 `irb(main):002:0> 60*24*365*10
 => 5256000`
 
-Link to 4.2.1: ![4.2.1 Var](https://github.com/jmcolella/phase-0/blob/master/week-4/defining-variables.rb)
+Link to 4.2.1: [4.2.1 Var](https://github.com/jmcolella/phase-0/blob/master/week-4/defining-variables.rb)
 
-Link to 4.2.2: ![4.2.2 string](https://github.com/jmcolella/phase-0/blob/master/week-4/simple-string.rb)
+Link to 4.2.2: [4.2.2 string](https://github.com/jmcolella/phase-0/blob/master/week-4/simple-string.rb)
 
-Link to 4.2.3: ![4.2.3 basic_math](https://github.com/jmcolella/phase-0/blob/master/week-4/basic-math.rb)
+Link to 4.2.3: [4.2.3 basic_math](https://github.com/jmcolella/phase-0/blob/master/week-4/basic-math.rb)
 
 ## Reflection
 
