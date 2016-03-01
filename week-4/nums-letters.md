@@ -46,7 +46,7 @@ Strings are a collection of characters written with quotations. We would use str
 
 #### What are local variables? Why and when would you use them?
 
-
+Local variables are ones that reside within a method or block of code and remain exclusive to that method or block of code. For example, say I have a method called square that takes any integer "x" and runs it through the operation x*x. The "x's" within the method, the ones a part of the square operation, are the local variables; they only exist within the specific method called square, and do not affect any other variables called "x" throughout the entire Ruby code/program. This is incredibly important because we don't have to use convoluted variable names to differentiate variables from one another; we can reuse variable names when appropriate without worrying that one used within a method will affect another used outside of that method.
 
 #### How was this challenge? Did you get a good review of some of the basics?
 
