@@ -13,7 +13,7 @@
 
 # Your Solution Below
 def longest_string(list_of_words)
-  puts list_of_words.sort_by {|x,y| y <=> x}[0]
+  return list_of_words.sort {|x,y| y.length <=> x.length}[0]
 end
 
 longest_string([])
