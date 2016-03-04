@@ -13,7 +13,12 @@
 
 # Your Solution Below
 def smallest_integer(list_of_nums)
-    print list_of_nums.sort[0]
+  for n in list_of_nums
+    if n.smallest?
+      print n
+    end
+  end
+    #print list_of_nums.sort[0]
 end
 
 smallest_integer([])
