@@ -13,7 +13,16 @@
 
 # Your Solution Below
 def longest_string(list_of_words)
-  return list_of_words.sort {|x,y| y.length <=> x.length}[0]
+   long_string = list_of_words[0]
+   counter = 0
+   while counter < list_of_words.length
+    if long_string.length < list_of_words[counter].length
+      long_string = list_of_words[counter]
+    end
+    counter += 1
+  end
+  p long_string
+  #return list_of_words.sort {|x,y| y.length <=> x.length}[0]
 end
 
 longest_string([])

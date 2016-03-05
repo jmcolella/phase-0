@@ -12,7 +12,16 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  return list_of_words.sort_by {|x| x.length}[0]
+   short_string = list_of_words[0]
+   counter = 0
+   while counter < list_of_words.length
+    if short_string.length > list_of_words[counter].length
+      short_string = list_of_words[counter]
+    end
+    counter += 1
+  end
+  p short_string
+  #return list_of_words.sort_by {|x| x.length}[0]
 end
 
 shortest_string([])

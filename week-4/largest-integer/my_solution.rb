@@ -12,7 +12,17 @@
 
 # Your Solution Below
 def largest_integer(list_of_nums)
-  return list_of_nums.sort {|x,y| y <=> x}[0]
+   large_num = list_of_nums[0]
+   counter = 0
+   while counter < list_of_nums.length
+    if large_num < list_of_nums[counter]
+      large_num = list_of_nums[counter]
+    end
+    counter += 1
+  end
+  p large_num
+
+  #return list_of_nums.sort {|x,y| y <=> x}[0]
 end
 
 largest_integer([])
