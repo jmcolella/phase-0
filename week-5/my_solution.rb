@@ -24,7 +24,12 @@
 
 def separate_comma(integer)
   integer_string = integer.to_s
-  integer_array = integer_string.split(//)
+  integer_array = []
+  counter = 0
+  while counter < integer_string.length
+    integer_array[counter] = integer_string[counter]
+    counter += 1
+  end
   if integer_array.length <= 3
       p integer_string
   elsif integer_array.length >=4 && integer_array.length <=6
@@ -40,7 +45,25 @@ end
 
 # 2. Refactored Solution
 
+def separate_comma(integer)
+  integer_string = integer.to_s
+  integer_array = integer_string.split(//)
+  insert_comma(integer_array)
+end
 
+def insert_comma(integer_as_array)
+  if integer_as_array.length <= 3
+      p integer_as_array.join
+  elsif integer_as_array.length >=4 && integer_as_array.length <=6
+    p integer_as_array.insert(-4, ",").join
+  elsif integer_as_array.length >=7 && integer_as_array.length <=9
+    p integer_as_array.insert(-4, ",").insert(-8, ",").join
+  elsif integer_as_array.length >=10 && integer_as_array.length <=12
+    p integer_as_array.insert(-4, ",").insert(-8, ",").insert(-12, ",").join
+  elsif integer_as_array.length >=13 && integer_as_array.length <=15
+    p integer_as_array.insert(-4, ",").insert(-8, ",").insert(-12, ",").insert(-16, ",").join
+  end
+ end
 
 
 # 3. Reflection
