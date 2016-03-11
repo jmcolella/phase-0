@@ -1,9 +1,9 @@
 
 # Pad an Array
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge with: Christyn Budzyna
 
-# I spent [] hours on this challenge.
+# I spent 2 hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
