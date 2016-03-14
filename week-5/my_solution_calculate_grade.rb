@@ -28,7 +28,7 @@
 
 # Initial Solution
 
-# def letter_grade(number_grades)
+# def get_grade(number_grades)
 #   counter = 0
 #   total = 0
 #   while counter < number_grades.length
@@ -68,4 +68,4 @@ def get_grade(number_grades)
   end
 end
 
-letter_grade([80, 90, 100, 70, 85])
+get_grade([80, 90, 100, 70, 85])
