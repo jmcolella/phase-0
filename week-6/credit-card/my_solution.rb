@@ -87,7 +87,7 @@ class CreditCard
   def multiply_by_two(card_array)
     @card_array.each_with_index do |num, index|
       if -index % 2 == 0
-        @multiply_array = @card_array[index] = num.to_i * 2
+        @multiply_array = (@card_array[index] = num.to_i * 2)
       end
     end
   end
