@@ -87,7 +87,7 @@ class CreditCard
   def multiply_by_two(card_array)
     @card_array.each_with_index do |num, index|
       if -index % 2 == 0
-        @multiply_array = (@card_array[index] = num.to_i * 2)
+         @card_array[index] = num.to_i * 2
       end
     end
   end
@@ -115,11 +115,43 @@ class CreditCard
   def check_card
     make_array(@card_number)
     multiply_by_two(@card_array)
-    split_double_digits(@multiply_array)
+    split_double_digits(@card_array)
     add_it_up(@new_array)
   end
 
 end
 
-
 # Reflection
+
+# What was the most difficult part of this challenge for you and your pair?
+
+# The most difficult part of this challenge was figuring out how to split up the double digit mumbers after multiply
+# every other index by 2. My pair and I had trouble with an IF statement we were trying to write. Our original statement
+# only had one condition, which was, for each num in the array that we created, split any num if the num is greater than or
+# equal to 10. When we did this, though, the each method replaced "nil" for any num that failed the IF statement. So we had
+# to re-engineer the way that IF statement was set up to create a condition for num that is less than 10. This is also not
+# mentioning that we had much trouble getting all of the methods/instance variables to work together and carry over info
+# from one method to the other. That was just a matter of tweaking some built-in methods (map instead of each for our split
+# digits method, for example) and being conscious of the instance variables we were using in each method.
+
+# What new methods did you find to help you when you refactored?
+
+# Inject is a really great method to accumulate data in an array. It's very elegant, since it can be placed on one line, and
+# it replaced about 4 lines of code from the intial solution. There's no need to set a "total" counter and have that equal
+# itself plus each item in the array, when using each to iterate. Inject essentially combines each with this accumulation
+# technique, where you pass a block of code to inject with two variables, one for the accumulator and the other is each item
+# in the array, and then you give it an operation for those to variables to interact with (in this case, it was addition).
+# Inject is also cool because you can pass it an argument, which will become the initial value of the accumulator, so say
+# we needed to initially add 2 to the whole array before adding up, just pass 2 as an argument to inject and it will add
+# 2 to the first item in the array, and then work from there, giving us our desired answer.
+
+# What concepts or learnings were you able to solidify in this challenge?
+
+# I think my pair and I definitiely solidified our understanding of instance variables and how to make them communicate
+# across various methods. We also learned the power of calling methods in another method, and using instance variables
+# as the arguments to pass to these method calls, so you can build a really powerful method without making it too confusing.
+# This is the case with our check_card method, which is just an accumulation of the other methods we created in the class,
+# calling each one with an instance variable from the class as an argument. This allowed us to split up the steps of this
+# problem into bite-size chunks, and then bring it all together in one final method. We also got a better handle on IF
+# statments nested within each methods and how we should write those out so the items in the array we don't want changed
+# stay the same, and the items we do want changed will change.
