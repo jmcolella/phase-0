@@ -9,8 +9,8 @@
 def serving_size_calc(item_to_make, num_of_ingredients)
 #   keep hash as is; this creates our library of items and ingredients
   library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
+
   # deleted error_counter and the corresponding if statement for the argument error
-  # error_counter = 3
 
   # deleted the each method and replaced with has_key. Since the each method is no longer needed, the error_counter became obsolete
 
@@ -22,6 +22,7 @@ def serving_size_calc(item_to_make, num_of_ingredients)
   end
 
   remaining_ingredients = num_of_ingredients % serving_size
+
   # added a suggested items feature to tell us how many more ingredients we need to make another item, if there are remaining ingredients
   suggested_items = serving_size - remaining_ingredients
 
