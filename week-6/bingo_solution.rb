@@ -136,29 +136,30 @@ end
       @bingo_board = board
     end
 
-    def selection(letter, number)
-      p @letter_call = ["b", "i", "n", "g", "o"].shuffle![0]
-      p @number_call = rand(1..100)
+    def selection
+      @letter_call = ["B", "I", "N", "G", "O"].sample
+      @number_call = rand(1...100)
+      p "Selection is: #{@letter_call}#{@number_call}"
     end
 
-    def check_and_insert(letter, number, bingo_board)
-      if @letter_call == "b"
+    def check_and_insert
+      if @letter_call == "B"
         @bingo_board.each_with_index do |num, index|
           @bingo_board[index][0] == @number_call ? @bingo_board[index][0] = "X" : num
         end
-      elsif @letter_call == "i"
+      elsif @letter_call == "I"
         @bingo_board.each_with_index do |num, index|
           @bingo_board[index][1] == @number_call ? @bingo_board[index][1] = "X" : num
         end
-      elsif @letter_call == "n"
+      elsif @letter_call == "N"
         @bingo_board.each_with_index do |num, index|
           @bingo_board[index][2] == @number_call ? @bingo_board[index][2] = "X" : num
         end
-      elsif @letter_call == "g"
+      elsif @letter_call == "G"
         @bingo_board.each_with_index do |num, index|
           @bingo_board[index][3] == @number_call ? @bingo_board[index][3] = "X" : num
         end
-      elsif @letter_call == "o"
+      elsif @letter_call == "O"
         @bingo_board.each_with_index do |num, index|
           @bingo_board[index][4] == @number_call ? @bingo_board[index][4] = "X" : num
         end
@@ -166,13 +167,11 @@ end
     end
 
     def print_board
-      selection(@letter_call, @number_call)
-      pretty_board = check_and_insert(@letter_call, @number_call, @bingo_board)
-      p pretty_board[0]
-      p pretty_board[1]
-      p pretty_board[2]
-      p pretty_board[3]
-      p pretty_board[4]
+      p @bingo_board[0]
+      p @bingo_board[1]
+      p @bingo_board[2]
+      p @bingo_board[3]
+      p @bingo_board[4]
     end
 
   end
@@ -186,7 +185,12 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 
+10.times do
+new_game.selection
+new_game.check_and_insert
 new_game.print_board
+sleep 1.0
+end
 
 
 #Reflection
