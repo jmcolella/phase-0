@@ -63,7 +63,7 @@ class BingoBoard
     p @number_call = rand(1..100)
   end
 
-  def check_column(letter, number,bingo_board)
+  def check_column(letter, number, bingo_board)
     if @letter_call == "b"
      @column = @bingo_board.map.each_with_index {|num, index| @bingo_board[index][0]}
     elsif @letter_call == "i"
@@ -118,12 +118,12 @@ class BingoBoard
     selection(@letter_call, @number_call)
     check_column(@letter_call, @number_call, @bingo_board)
     replace_with_x(@column, @number_call, @bingo_board)
-    @pretty_board = remake_board(@column, @letter_call, @bingo_board)
-    p @pretty_board[0]
-    p @pretty_board[1]
-    p @pretty_board[2]
-    p @pretty_board[3]
-    p @pretty_board[4]
+    pretty_board = remake_board(@column, @letter_call, @bingo_board)
+    p pretty_board[0]
+    p pretty_board[1]
+    p pretty_board[2]
+    p pretty_board[3]
+    p pretty_board[4]
   end
 
 end
@@ -162,8 +162,6 @@ end
         @bingo_board.each_with_index do |num, index|
           @bingo_board[index][4] == @number_call ? @bingo_board[index][4] = "X" : num
         end
-      else
-        @bingo_board
       end
     end
 
