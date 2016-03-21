@@ -31,36 +31,63 @@
 
 # 1. Initial Solution
 
+# def pad(array, min_size, value = nil)
+#   clone_array = array.clone
+#   if clone_array.length >= min_size
+#     return clone_array
+#   elsif clone_array.length < min_size
+#     length_to_add = min_size - clone_array.length
+#     new_array = clone_array + Array.new(length_to_add,value)
+#   end
+#   p new_array.flatten
+# end
+
+# def pad!(array, min_size, value = nil)
+#   arr_var = array
+#   if arr_var.length >= min_size
+#   return arr_var
+#   elsif arr_var.length < min_size
+#     length_to_add = min_size - arr_var.length
+#     array_to_add = Array.new(length_to_add,value)
+#     new_array = array << array_to_add
+#  end
+#   return new_array.flatten!
+# end
+
+
+# 3. Refactored Solution (completed as bonus challenge in Week 6)
+
 def pad(array, min_size, value = nil)
   clone_array = array.clone
   if clone_array.length >= min_size
-    return clone_array
-  elsif clone_array.length < min_size
-    length_to_add = min_size - clone_array.length
-    new_array = clone_array + Array.new(length_to_add,value)
+    p clone_array
+  else
+    until clone_array.length == min_size
+      clone_array.push(value)
+      # used the push method instead of concatenating two arrays; this method will add the argument passed to it to the
+      # array it is called on; within the context of the loop, push will stop adding the argument once the array
+      # length is equal to the min_size integer passed in to the pad method
+    end
   end
-  p new_array.flatten
+  p clone_array
 end
 
 array = [1,2,3]
 pad(array, 5, "apples")
-p array
-
 
 def pad!(array, min_size, value = nil)
-  arr_var = array
-  if arr_var.length >= min_size
-  return arr_var
-  elsif arr_var.length < min_size
-    length_to_add = min_size - arr_var.length
-    array_to_add = Array.new(length_to_add,value)
-    new_array = array << array_to_add
- end
-  return new_array.flatten!
+  if array.length >= min_size
+    p array
+  else
+    until array.length == min_size
+      array.push(value)
+    end
+  end
+  p array
 end
 
-
-# 3. Refactored Solution
+array = [1,2,3]
+pad(array, 5, "apples")
 
 # There are no methods that could simplify our initial solution.
 
