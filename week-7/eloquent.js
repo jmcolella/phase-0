@@ -5,8 +5,14 @@
 // Program Structure
 // Write your own variable and do something to it.
 
+var num = 5
 
+console.log(num*5)
 
+// Prompt
+
+prompt("What is your favorite food?")
+console.log("Hey! That's my favorite too!")
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
 
@@ -26,9 +32,7 @@ for (i=1; i < 101; i++) {
   }
 }
 
-
 // Functions
-
 // Complete the `minimum` exercise.
 
 
@@ -36,18 +40,18 @@ for (i=1; i < 101; i++) {
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
 
-// var me = {
-//   name: "John",
-//   age: 24,
-//   favoritefood1: "Pizza",
-//   favoritefood2: "BBQ",
-//   favoritefood3: "Hummus",
-//   quirk: "I'm brew my own beer",
-// }
+var me = {
+  name: "John",
+  age: 24,
+  favoritefood1: "Pizza",
+  favoritefood2: "BBQ",
+  favoritefood3: "Hummus",
+  quirk: "I'm brew my own beer",
+}
 
-// console.log(me["name"])
-// console.log(me["age"])
-// console.log(me["favoritefood1"])
-// console.log(me["favoritefood2"])
-// console.log(me["favoritefood3"])
-// console.log(me["quirk"])
+console.log(me["name"])
+console.log(me["age"])
+console.log(me["favoritefood1"])
+console.log(me["favoritefood2"])
+console.log(me["favoritefood3"])
+console.log(me["quirk"])
