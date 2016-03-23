@@ -35,6 +35,18 @@ for (i=1; i < 101; i++) {
 // Functions
 // Complete the `minimum` exercise.
 
+var mininmum = function(x,y) {
+  min = x
+  if (y < x) {
+    min = y
+    return min
+  } else {
+    return min
+  }
+}
+
+console.log(mininmum(0, 10));
+console.log(mininmum(0, -10));
 
 
 // Data Structures: Objects and Arrays
