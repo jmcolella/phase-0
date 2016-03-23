@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge with: Christyn Budzyna.
+# We spent 1.25 hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
@@ -109,3 +109,51 @@ end
 
 #=======================================================================
 # Reflection Section
+
+=begin
+What are the differences between the two different hash syntaxes shown in the state_data file?
+
+The hash in the state_data file uses two types of keys: strings and symbols. The strings are used
+for the first level of keys, the state names, and then the symbols are used within the nested
+hash for the population data. The big difference between using the string vs. the symbol as a
+hash key is that symbols take up far less space in memory. This is in part due to the fact that
+they are immutable and unique; if you were to create a string "Hello" fifty times, that string
+would have 50 different object ids, but if you create a symbol ":Hello", no matter how many times
+you make that symbol, it will always have the same oject id. So, in the case of our state_data
+hash, it helps to use symbols for the keys "population_density" and "population" because they are
+being used 50 times, so we want to limit the amount of object ids created and help Ruby process
+the hash faster.
+
+What does require_relative do? How is it different from require?
+
+Require_relative allows you to reference another Ruby file that is located locally on your
+machine, say in the same directory as the file you are working on. In essence, you can
+require_relative file2 in file1 if file2 is located within the same local machine as file1. On
+the other hand, require allows you to reference a file that is not on your local machine, instead
+it may be an external file downloaded to the Ruby LOAD PATH.
+
+What are some ways to iterate through a hash?
+
+You can iterate through a hash by calling the method each to work with both the keys and values
+in the hash. You can also use each_key and each_value to just work with those specific portions
+of the hash.
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+
+The major thing my pair and I refactored was the fact that virus_effects called methods that
+passed in arguments, even though those methods were just making use of instance variables within
+the class. In that case, it wasn't necessary to give these methods arguments (predicted_deaths
+and speed_of_spread) because each of those methods didn't even make use of those argument
+variables, they just relied on the instance variables to function.
+
+What concept did you most solidify in this challenge?
+
+I would say the idea of require_relative vs. require was made way more clear in this challenge. I
+read about both in WGR, but it was kind of hazy and hard to figure out what he was talking about.
+Going over these two concepts with my pair/guide was very helpful in figuring out the difference
+between the two. I also got a better handle on how we can initialize a class. I didn't think we
+could initialize a class within an each method as a block of code, but low and behold, it worked.
+That's definitely something to keep in mind when I have a similar program where I need to create
+many instances of a class at the same time.
+
+=end
