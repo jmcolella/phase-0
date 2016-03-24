@@ -8,7 +8,6 @@
 // input: an integer
 // output: string of the input integer with commas
 // steps:
-
 // create a function that takes in an integer as an argument
 //   convert the input integer into a string
 //   convert the string into an array
@@ -41,12 +40,13 @@ function separateComma(integer) {
   var reverseArray = integer.toString().split("").reverse();
   var chunkArray = [];
 
-  while (reverseArray.length) {
-    var temp = reverseArray.splice(0,3);
-    chunkArray.push(temp.reverse().join(""));
+
+  for (var index = 0; reverseArray.length; index++) {
+    chunkArray[index] = reverseArray.splice(0,3).reverse().join("");
   }
 
   console.log(chunkArray.reverse().join(","));
+
 }
 
 separateComma(123456789)
