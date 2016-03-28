@@ -62,10 +62,7 @@ end
 
 # Refactored Solution
 
-
-
-
-
+# Not much to refactor, my solution is pretty simple as it is.
 
 # DRIVER TESTS GO BELOW THIS LINE
 
@@ -80,8 +77,6 @@ puts "Now you have #{super_mario.pez_count} pez!"
 puts "Oh, you want one do you?"
 puts "The pez flavor you got is: #{super_mario.get_pez}"
 puts "Now you have #{super_mario.pez_count} pez!"
-
-
 
 # Reflection
 
@@ -99,7 +94,17 @@ puts "Now you have #{super_mario.pez_count} pez!"
 
 # What are you going to study to get more prepared for Phase 1?
 
-# Well-Grounded Rubyist for sure. I need to tackle the RegEx chapter and get a good grasp on that. I also want to re-read the first chapter, which I felt like had a lot of solid information that mostly went over my head.# I worked on this challenge by myself.
+# Well-Grounded Rubyist for sure. I need to tackle the RegEx chapter and get a good grasp on that. I also want to re-read the 
+# first chapter, which I felt like had a lot of solid information that mostly went over my head.
+
+
+
+
+
+
+
+# FIZZBUZZ SUPER EDITION (I did this on my own as extra practice)
+# I worked on this challenge by myself.
 # This challenge took me [#] hours.
 
 
