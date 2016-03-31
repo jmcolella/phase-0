@@ -23,9 +23,33 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+var gradebook = {
+  "Joseph": {},
+  "Susan": {},
+  "William": {},
+  "Elizabeth": {},
+};
 
+gradebook["Joseph"]["testScores"] = scores[0]
+gradebook["Susan"]["testScores"] = scores[1]
+gradebook["William"]["testScores"] = scores[2]
+gradebook["Elizabeth"]["testScores"] = scores[3]
 
+gradebook["addScore"] = function(name, score) {
+  gradebook[name]["testScores"].push(score);
+}
 
+gradebook["getAverage"] = function(name) {
+  return average(gradebook[name]["testScores"]);
+};
+
+function average(integers) {
+  total = 0
+  for (var i = 0; i < integers.length; i++) {
+    total += integers[i]
+  }
+  return total / integers.length;
+};
 
 
 
@@ -33,7 +57,32 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {
+  "Joseph": {},
+  "Susan": {},
+  "William": {},
+  "Elizabeth": {},
+};
 
+gradebook["Joseph"]["testScores"] = scores[0]
+gradebook["Susan"]["testScores"] = scores[1]
+gradebook["William"]["testScores"] = scores[2]
+gradebook["Elizabeth"]["testScores"] = scores[3]
+
+gradebook["addScore"] = function(name, score) {
+  gradebook[name]["testScores"].push(score);
+}
+
+gradebook["getAverage"] = function(name) {
+  return average(gradebook[name]["testScores"]);
+};
+
+function average(integers) {
+  var sum = integers.reduce(function(a, b) {
+    return a + b;
+  })
+  return sum / integers.length;
+};
 
 
 
@@ -43,12 +92,28 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Reflect
 
+// What did you learn about adding functions to objects?
 
+// I learned that you can add functions by simply assigning them to a property in an object. You can also
+// call functions not assigned to any property in an object within one of its properties. This is definitely
+// a useful tool if you wanted to keep various components of a program separate from each other for
+// organizational and de-bugging purposes.
 
+// How did you iterate over nested arrays in JavaScript?
 
+// You can iterate over nested arrays in JavaScript similarly as you can in Ruby. There's a layering concept
+// to the iterations, wherein you need to iterate over each "level" of the array to ultimately return what you
+// are after. In JavaScript, this may mean using the map method multiple times as you can deeper and deeper into
+// the array to ultimately map what you need to map.
 
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
-
+// We made use of the method reduce to execute summing up all of the scores for the average function. I had
+// read about reduce before, but I had never used it. Reduce works similarly to inject in Ruby, where both
+// progressively add up (or other mathematical operation) the items in an array, returning the cumulative total
+// of all those items. This worked incredibly well for getting the average because the first step in finding an
+// average is to add up all the numbers in the set; then it was just a matter of dividing this total sum by the
+// length of the array (ie the total numbers).
 
 
 // __________________________________________
