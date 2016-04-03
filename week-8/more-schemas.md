@@ -1,6 +1,6 @@
 ### One-to-One Relationship
 
-![One-to-One Schema](imgs/one-to-one-schmea-design.png)
+![One-to-One Schema](imgs/one-to-one-schema-design.png)
 
 I believe this is a one-to-one relationship because I used the two tables to essentially split up data that could have been a part of one table. For each recipe name/style in the homebrew recipes table, there is only one corresponding set of ingredients (malt bill, hops, yeast, etc.). I could have listed this all out in one table, but ingredients lists can get pretty lengthy, and maybe I just want to query the names of recipes I've made in the past, including the dates I first brewed them as well as most recently; I don't want all the ingredient information to bog down that query, so I put it in another table and use a one-to-one relationship to link those two tables.
 
