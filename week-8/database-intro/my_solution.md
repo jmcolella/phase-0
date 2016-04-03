@@ -38,4 +38,4 @@ A primary key is present (or should be present) in every data table set up. This
 
 #### How can you select information out of a SQL database? What are some general guidelines for that?
 
-You can select information from a database using the simply syntax `SELECT * FROM table_name` where `*` is a wildcard notation meaning all columns in the table. That can be changed if you only want one column, which would read as `SELECT column_name FROM table_name`. You can also select multiple columns (but not all) as such: `SELECT column_name1, column_name2 FROM table_name`. The `SELECT' and `FROM` keywords must be upper case, and the column/table names must be lower case.
+You can select information from a database using the simply syntax `SELECT * FROM table_name` where `*` is a wildcard notation meaning all columns in the table. That can be changed if you only want one column, which would read as `SELECT column_name FROM table_name`. You can also select multiple columns (but not all) as such: `SELECT column_name1, column_name2 FROM table_name`. The `SELECT` and `FROM` keywords must be upper case, and the column/table names must be lower case.
