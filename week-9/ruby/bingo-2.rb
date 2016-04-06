@@ -55,16 +55,10 @@ class BingoScorer
 
   def horizontal
     bingo = []
-    counter = 0
-    counter += 1
-    @bingo_board[counter].each_index do |inner_index|
-      if @bingo_board[counter][inner_index] != 'x'
-        next
-      else
+    @bingo_board.each_index do |outer_index|
+      @bingo_board[outer_index].each do |row|
+        if
         bingo << @bingo_board[counter][inner_index]
-        if bingo.length == 5
-          p "BINGO!"
-        end
       end
     end
   end
