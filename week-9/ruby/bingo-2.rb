@@ -89,6 +89,7 @@ class BingoScorer
   end
   end
 
+# ALL OF THE ABOVE IS COMPLETELY WRONG AND NEEDS TO BE REWORKED
 
 end
 
