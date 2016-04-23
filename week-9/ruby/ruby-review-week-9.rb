@@ -13,18 +13,19 @@
 
 # Initial Solution
 
-# def is_fibonacci?(num)
-#   counter = 0
-#   fib = ((((1+(Math.sqrt(5)))/2)**counter) - (-(1+(Math.sqrt(5)))/2)**(-counter)) / (Math.sqrt(5))
-#   until counter == num
-#     if fib == num
-#       p true
-#     else
-#       p false
-#     counter += 1
-#     end
-#   end
-# end
+def is_fibonacci?(num)
+  fib_array = [0,1]
+  fib_counter = 2
+  until fib_counter == num + 1
+    fib_array << fib_array[fib_counter-1] + fib_array[fib_counter-2]
+    fib_counter += 1
+  end
+  if fib_array.include?(num)
+    return true
+  end
+end
+
+puts is_fibonacci?(8)
 
 # # def fibonacci(num)
 # #   actual = num - 1
